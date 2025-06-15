@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/xinwen.css">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+        }
+        .main{
+            width: 100%;
+            height: auto;
+            padding: 150px;
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            background-image: url(/images/新闻背景图.jpg);
+            background-size: cover;
+
+
+        }
+        .main .box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 15px;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            text-align: center;
+            font-size: larger;
+            box-shadow: 0px 0px 5px black;
+        }
+        .main_tp img{
+            width: 400px;
+        }
+        .main_h1{
+            color: #fff;
+            font-size: larger;
+        }
+        .main_h6{
+            color: silver;
+            font-size: 20px;
+            margin-top: 105px;
+
+        }
+        .main_h6 span{
+            color: antiquewhite;
+            margin-left: 200px;
+        }
+        .top{
+            width: 100%;
+            height: 80px;
+            padding: 5px;
+            background-color: rgba(17,17,17,0.75);
+            box-shadow: 0px 3px 7px 0px rgb(0 0 0 / 35%);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            text-align: justify;
+            border-bottom: 2px solid #1a1a1a;
+            opacity: 0.8;
+            z-index: 999;
+        }
+        .left{
+            width: 70%;
+
+        }
+        .left ul{
+            position: relative;
+            left: -100px;
+            top: -20px;
+        }
+        .left ul li{
+            display: inline-block;
+            color: #fff;
+            margin-left: 25px;
+            font-size: larger;
+            transition: all ;
+
+
+        }
+         .left ul li:hover{
+            text-shadow: 0px 0px 5px skyblue;
+            border-top: 10px solid skyblue;
+
+        }
+
+
+        .right{
+            width: 30%;
+            float: right;
+            position: relative;
+            top: -51px;
+
+        }
+        .right ul li{
+            display: inline-block;
+            color: #fff;
+            margin-left: 25px;
+            font-size: larger;
+            transition: all .5s;
+
+        }
+        .right ul li:hover{
+            text-shadow: 0px 0px 5px skyblue;
+            border-top: 10px solid skyblue;
+
+        }
+        #tb{
+            position: relative;
+            left: 10px;
+            top: 20px;
+
+        }
+        .main_tp img{
+            transition: all 0.5s;
+        }
+        .main_tp img:hover{
+            transform: scale(1.1);
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="nav">
+           <div class="left">
+
+            <ul>
+                <li><img src="/images/logo2.png" alt="" width="300px" id="tb"></li>
+               <a href="index"> <li>首页</li></a>
+              <a href="xinwen">  <li>新闻</li></a>
+               <a href="mengdejuese"> <li>角色</li></a>
+              <a href="shijie">  <li>世界</li></a>
+              <a href="manhua">  <li>漫画</li></a>
+                <li>社区</li>
+            </ul>
+           </div>
+           <div class="right">
+            <ul>
+               <a href="guanai"> <li>成长关爱系统</li></a>
+                <li><img src="/images/爱心.png" alt=""></li>
+                <li>登录</li>
+                <li><img src="/images/登录.png" alt=""></li>
+            </ul>
+           </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="box">
+            <div class="main_tp"><img src="/images/新闻1.png" alt=""></div>
+            <div class="main_h1">《原神》「风花的呼吸」3.5版本活<br>动速递第一期</div>
+            <div class="main_h6">2023/02/27<span>新闻</span></div>
+        </div>
+        <div class="box">
+            <div class="main_tp"><img src="/images/新闻2.jpg" alt=""></div>
+            <div class="main_h1">《原神》「邀约事件 · 第八辑」传说<br>任务说明</div>
+            <div class="main_h6">2023/02/27<span>新闻</span></div>
+        </div>
+        <div class="box">
+            <div class="main_tp"><img src="/images/新闻3.jpg" alt=""></div>
+            <div class="main_h1">《原神》「蝎尾鬃狮之章」传说任务<br>说明</div>
+            <div class="main_h6">2023/02/27<span>新闻</span></div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="btns">
+            <div class="btn">最新</div>
+            <div class="btn">新闻</div>
+            <div class="btn">公告</div>
+            <div class="btn">活动</div>
+
+        </div>
+        <div class="lbs">
+            <div class="lb"><img src="/images/内容1.png" alt=""><span id="wz1">《原神》「风花的呼吸」玩法说明</div>
+            <div class="lb"><img src="/images/内容2.jpg" alt=""><span id="wz1">《原神》「风花的呼吸」活动即将开启</div>
+            <div class="lb"><img src="/images/内容4.jpg" alt=""><span id="wz1">《原神》3.5版本内容招募活动「风花的呼吸」现已开启</span></div>
+            <div class="lb"><img src="/images/内容5.jpg" alt=""><span id="wz1">《原神》「神铸赋形」活动祈愿现已开启，「双手剑·苇海信标」「长柄武器·赤沙之杖</span></div>
+        </div>
+        <div class="fk">加载更多</div>
+    </div>
+    <div class="tb">
+        <div class="xm"><img src="/images/微博.png" alt=""></div>
+        <div class="xm"><img src="/images/微信.png" alt=""></div>
+        <div class="xm"><img src="/images/QQ.png" alt=""></div>
+        <div class="xm"><img src="/images/分享.png" alt=""></div>
+    </div>
+    <div class="footer">
+        <div id="lb">
+            <ul>
+                <li>用户协议|</li>
+                <li>隐私政策|</li>
+                <li>儿童隐私政策|</li>
+                <li>自律公约|</li>
+                <li>成长关爱|</li>
+                <li>关于我们|</li>
+                <li>联系我们|</li>
+                <li>加入我们</li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="/images/米哈游.png" alt="">
+            <img src="/images/logo.png" alt="">
+        </div>
+        <div class="footer_wb">
+            <p>
+                健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。<br>
+
+沪公网安备31010402001113号
+|
+增值电信业务经营许可证：沪B2-20190555<br>
+沪ICP备19018275号-4 | 沪网文〔2022〕1334-052号 | 国新出审【2019】2978号<br>
+互联网违法不良信息举报邮箱: tousu@mihoyo.com 互联网违法不良信息举报电话: 021-60371750 （工作时间：每天10点 - 20点）<br>
+亲爱的市民朋友，上海警方反诈劝阻电话“962110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听<br>
+未成年成长关爱热线：021-60371740 （服务时间：8:00-23:00）<br>
+© 2020 米哈游版权所有 | 上海米哈游影铁科技有限公司 客服电话：400-666-6312<br>
+            </p>
+        </div>
+        <div class="footer_tb">
+            <div class="tpxm"><img src="/images/1.png" alt="" ></div>
+            <div class="tpxm"><img src="/images/2.png" alt=""></div>
+            <div class="tpxm"><img src="/images/3.png" alt=""></div>
+            <div class="tpxm"><img src="/images/4.png" alt=""></div>
+            <div class="tpxm"><img src="/images/5.png" alt=""></div>
+            <div class="tpxm"><img src="/images/6.png" alt=""></div>
+        </div>
+    </div>
+</body>
+
+
+
+
+</html>

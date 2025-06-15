@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.addEventListener('load',function(){
+            const name=document.querySelector('.name');
+            const cv=document.querySelector('.cv');
+            const jsjs=document.querySelector('.jsjs');
+            const jstp=document.querySelector('#jstp');
+            const tinali=document.getElementById('tinali');
+            const sainuo=document.getElementById('sainuo');
+            const nilu=document.getElementById('nilu');
+            const naxida=document.getElementById('naxida');
+            const sanbing=document.getElementById('sanbing');
+            const haiseng=document.getElementById('haiseng');
+            tinali.addEventListener('click',function(){
+
+                jstp.src="/images/提纳里.png"
+                name.innerHTML='提纳里';
+                cv.innerHTML='cv:莫然';
+                jsjs.innerHTML='道成林的巡林官，毕业于须弥教令院阿弥利多学院的生论派植物学学者'
+
+
+            })
+            sainuo.addEventListener('click',function(){
+
+                jstp.src="/images/赛诺.png"
+                name.innerHTML='赛诺';
+                cv.innerHTML='cv:李轻扬'
+                jsjs.innerHTML='教令院的大风纪官，所有风纪官们的首领。拥有的独特幽默感令人印象深刻'
+            })
+            nilu.addEventListener('click',function(){
+
+                jstp.src="/images/妮露.png"
+                name.innerHTML='妮露';
+                cv.innerHTML='cv:紫苏九月';
+                jsjs.innerHTML='“祖拜尔剧场”的明星演员，舞姿娉婷，如睡莲初绽，一尘不染。但她绝非高傲清冷之人，即便只是匆匆的旅者，也会对她纯洁质朴的笑容过目不忘'
+            })
+            naxida.addEventListener('click',function(){
+
+                jstp.src="/images/纳西妲.png"
+                name.innerHTML='纳西妲';
+                cv.innerHTML='cv:花玲';
+                jsjs.innerHTML='魔神名为“布耶尔”，“尘世七执政”中的草神，被须弥人给予“小吉祥草王”的爱称  。现今七神中最年轻的一位，是大慈树王的树枝转生，自诞生起已五百年'
+            })
+            sanbing.addEventListener('click',function(){
+
+                jstp.src="/images/散兵.png"
+                name.innerHTML='流浪者';
+                cv.innerHTML='cv:鹿暗';
+                jsjs.innerHTML='若有心者方为人，他不可称之为人。若无心者亦有悲喜苦乐，他便是最像人的人偶。'
+            })
+            haiseng.addEventListener('click',function(){
+
+                jstp.src="/images/艾尔海森.png"
+                name.innerHTML='艾尔海森';
+                cv.innerHTML='cv:杨超然';
+                jsjs.innerHTML='艾尔海森是须弥教令院现任书记官，有过人的智慧与才能。生活得自由自在，一般人基本找不到他。'
+
+            })
+
+
+        })
+    </script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .top{
+            width: 100%;
+            height: 80px;
+            padding: 5px;
+            background-color: rgba(17,17,17,0.75);
+            box-shadow: 0px 3px 7px 0px rgb(0 0 0 / 35%);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            text-align: justify;
+            border-bottom: 2px solid #1a1a1a;
+            opacity: 0.8;
+            z-index: 99;
+        }
+        .left{
+            width: 70%;
+
+        }
+        .left ul{
+            position: relative;
+            left: -100px;
+            top: -20px;
+        }
+        .left ul li{
+            display: inline-block;
+            color: #fff;
+            margin-left: 25px;
+            font-size: larger;
+            transition: all ;
+
+
+        }
+         .left ul li:hover{
+            text-shadow: 0px 0px 5px skyblue;
+            border-top: 10px solid skyblue;
+
+        }
+
+
+        .right{
+            width: 30%;
+            float: right;
+            position: relative;
+            top: -51px;
+
+        }
+        .right ul li{
+            display: inline-block;
+            color: #fff;
+            margin-left: 25px;
+            font-size: larger;
+            transition: all .5s;
+
+        }
+        .right ul li:hover{
+            text-shadow: 0px 0px 5px skyblue;
+            border-top: 10px solid skyblue;
+
+        }
+        #tb{
+            position: relative;
+            left: 10px;
+            top: 20px;
+
+        }
+        .main{
+            width: 100%;
+            height: 110vh;
+            background-image: url(/images/角色须弥城.jpg);
+            background-position: center center;
+            background-size: cover;
+
+
+
+
+        }
+        .jstp img{
+            width: 1250px;
+        }
+        .fk{
+            display: block;
+          width: 180px;
+          height: 6px;
+         background: #e3bc8c;
+         position: relative;
+         left: 250px;
+         top: 120px;
+        }
+        .name{
+            width: 250px;
+            height: 100px;
+            color: #fff;
+            font-size: 55px;
+            font-weight: 900;
+            position: relative;
+            left: 250px;
+            top: 140px;
+        }
+        .cv{
+
+    display: flex;
+    width: 330px;
+    font-weight: 500;
+    font-size: 28px;
+    height: 54px;
+   z-index: 10;
+    color: #24333c;
+    line-height: 54px;
+    padding-left: 60px;
+    box-sizing: border-box;
+    background: #cca574 ;
+    background-position: left top;
+    background-size: 54px;
+    text-align: left;
+    box-shadow: 2px 3px 6px 0 rgb(12 12 12 / 20%);
+    position: relative;
+    left: 300px;
+    top: 160px;
+        }
+        #dht{position: relative;
+            width:70px;
+            left: 310px;
+            top: 20px;
+            z-index: 11;
+
+        }
+        #xtb{width: 80px;
+            position: relative;
+            left: 250px;
+            top: 106px;
+
+        }
+        .jsjs{
+            width: 550px;
+            color: #fff;
+            font-weight: 500;
+            background-color: #24333c;
+            opacity: 0.9;
+           padding-left: 50px;
+           padding-bottom: 25px;
+           padding-right: 25px;
+           padding-top: 20px;
+            text-align: justify;
+            line-height: 25px;
+            position: relative;
+            left: 250px;
+            top: -45px;
+            z-index: 2;
+        }
+        #bsxtb{
+            width: 20px;
+            position: relative;
+            left: 240px;
+            top: 30px;
+
+
+        }
+        .jstp{
+            width: 1200px;
+            height: 400px;
+            position: relative;
+            left: 240px;
+            top: -520px;
+        }
+        .jsxzl{
+            width:100%;
+            display: flex;
+
+            justify-content: center;
+            position: relative;
+            top: -380px;
+            z-index: 9;
+            padding: 25px;
+            background-color: rgba(0, 0, 0, 0.2);
+            opacity: 0.9;
+        }
+        .jsxzl .jsxm img{
+            width: 130px;
+        }
+        .jsxzl .jsxm{
+            width: 200px;
+            height: auto;
+            padding: 5px;
+            margin-left: 45px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+            color: #fff;
+            text-align: center;
+            font-size: larger;
+           clear: both;
+           border: 5px solid transparent;
+           cursor: pointer;
+
+        }
+
+        .jsxzl .jsxm:hover{
+          border: 5px solid #fff;
+        }
+        .zuotubiao img {
+            margin-right: 105px;
+            margin-top: 65px;
+            transition: all 0.5s;
+            opacity: 0.5;
+        }
+        .zuotubiao img:hover{
+            opacity: 1;
+        }
+        .youtubiao img{
+            margin-left: 105px;
+            margin-top: 65px;
+            transition: all 0.5s;
+            opacity: 0.5;
+        }
+        .youtubiao img:hover{
+            opacity: 1;
+        }
+        .footer{
+            width: 100%;
+            height: auto;
+            background-color: #000;
+            color: #999;
+            padding: 25px;
+
+
+        }
+        .footer .lb{
+            width: 60%;
+            height: auto;
+
+            text-align: center;
+            letter-spacing: 1px;
+            color:#fff;
+            position: relative;
+            left: 400px;
+
+        }
+        .footer .lb ul li{
+            display: inline;
+            margin-left: 10px;
+            transition: all 0.5s;
+        }
+        .footer .lb ul li:hover{
+            text-decoration: underline;
+
+            text-shadow: 0px 0px 5px #fff;
+        }
+        .footer .logo{
+            width: 40%;
+            position: relative;
+            right: 50px;
+           top: 50px;
+            text-align: center;
+
+        }
+        .footer .logo img{
+            width: 150px;
+            margin-left: 25px;
+        }
+        .footer_wb{
+            width: 68%;
+            font-size: 15px;
+            position: relative;
+            left: 480px;
+            top: -80px;
+        }
+        .footer_tb{
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            flex: 1;
+            align-items: center;
+            flex-direction: row;
+            position: relative;
+            left: 320px;
+            top: -40px;
+        }
+        .footer_tb .tpxm{
+            background-color: #000;
+            padding: 5px;
+            border-radius: 10px;
+            margin-left: 5px;
+        }
+        .tb{
+            width: 100%;
+            height: 50px;
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           border-bottom: 2px solid slategrey;
+            text-align: center;
+
+        }
+        .xm img{width: 40px;
+            margin-left: 100px;
+            opacity: 0.6;
+            position: relative;
+            left: -35px;
+            transition: all 0.5s;
+
+        }
+        .xm img:hover{
+            opacity: 1;
+            filter: brightness(1.5);
+        }
+        .xzl{width: 250px;
+            color: #fff;
+            font-size: 20px;
+            position: absolute;
+            top: 80px;
+            left: 45px;
+            letter-spacing: 2px;
+        }
+        .xzl ul li{
+            margin-top:55px;
+            transition: all 0.5s;
+        }
+        .xzl ul li:hover{
+            transform: scale(1.1);
+            text-decoration: underline;
+        }
+        a{
+            color: #fff;
+            text-decoration: none;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="nav">
+           <div class="left">
+
+            <ul>
+                <li><img src="/images/logo2.png" alt="" width="300px" id="tb"></li>
+               <a href="index"> <li>首页</li></a>
+              <a href="xinwen">  <li>新闻</li></a>
+               <a href="mengdejuese"> <li>角色</li></a>
+              <a href="shijie">  <li>世界</li></a>
+              <a href="manhua">  <li>漫画</li></a>
+                <li>社区</li>
+            </ul>
+           </div>
+           <div class="right">
+            <ul>
+               <a href="guanai"> <li>成长关爱系统</li></a>
+                <li><img src="/images/爱心.png" alt=""></li>
+                <li>登录</li>
+                <li><img src="/images/登录.png" alt=""></li>
+            </ul>
+           </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="fk"></div>
+        <div class="name">提纳里</div>
+        <div class="cv">cv:莫然</div>
+       <div id="xtb"><img src="/images/小图标.jpeg" alt="" ></div>
+       <div id="dht"><img src="/images/电话筒.png" alt="" id="dht"></div>
+       <div id="bsxtb"><img src="/images/白色小图标.png" alt="" width=80px"></div>
+        <div class="jsjs">道成林的巡林官，毕业于须弥教令院阿弥利多学院的生论派植物学学者</div>
+    <div class="jstp"><img src="/images/提纳里.png" alt="" id="jstp"></div>
+    <div class="jsxzl">
+        <div class="zuotubiao"><img src="/images/左图标.png" alt=""></div>
+        <div class="jsxm" id="tinali"><img src="/images/小提纳里.png" alt=""><br>提纳里</div>
+        <div class="jsxm" id="sainuo"><img src="/images/小赛诺.png" alt=""><br>赛诺</div>
+        <div class="jsxm" id="nilu"><img src="/images/小妮露.png" alt=""><br>妮露</div>
+        <div class="jsxm" id="naxida"><img src="/images/小纳西妲.png" alt=""><br>纳西妲</div>
+        <div class="jsxm" id="sanbing"><img src="/images/小散兵.png" alt=""><br>流浪者</div>
+        <div class="jsxm" id="haiseng"><img src="/images/小海森.png" alt=""><br>艾尔海森</div>
+        <div class="youtubiao"><img src="/images/右图标.png" alt=""></div>
+    </div>
+    </div>
+    <div class="tb">
+        <div class="xm"><img src="/images/微博.png" alt=""></div>
+        <div class="xm"><img src="/images/微信.png" alt=""></div>
+        <div class="xm"><img src="/images/QQ.png" alt=""></div>
+        <div class="xm"><img src="/images/分享.png" alt=""></div>
+    </div>
+    <div class="footer">
+        <div class="lb">
+            <ul>
+                <li>用户协议|</li>
+                <li>隐私政策|</li>
+                <li>儿童隐私政策|</li>
+                <li>自律公约|</li>
+                <li>成长关爱|</li>
+                <li>关于我们|</li>
+                <li>联系我们|</li>
+                <li>加入我们</li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="/images/米哈游.png" alt="">
+            <img src="/images/logo.png" alt="">
+        </div>
+        <div class="footer_wb">
+            <p>
+                健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。<br>
+
+沪公网安备31010402001113号
+|
+增值电信业务经营许可证：沪B2-20190555<br>
+沪ICP备19018275号-4 | 沪网文〔2022〕1334-052号 | 国新出审【2019】2978号<br>
+互联网违法不良信息举报邮箱: tousu@mihoyo.com 互联网违法不良信息举报电话: 021-60371750 （工作时间：每天10点 - 20点）<br>
+亲爱的市民朋友，上海警方反诈劝阻电话“962110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听<br>
+未成年成长关爱热线：021-60371740 （服务时间：8:00-23:00）<br>
+© 2020 米哈游版权所有 | 上海米哈游影铁科技有限公司 客服电话：400-666-6312<br>
+            </p>
+        </div>
+        <div class="footer_tb">
+            <div class="tpxm"><img src="/images/1.png" alt="" ></div>
+            <div class="tpxm"><img src="/images/2.png" alt=""></div>
+            <div class="tpxm"><img src="/images/3.png" alt=""></div>
+            <div class="tpxm"><img src="/images/4.png" alt=""></div>
+            <div class="tpxm"><img src="/images/5.png" alt=""></div>
+            <div class="tpxm"><img src="/images/6.png" alt=""></div>
+        </div>
+    </div>
+    <div class="xzl">
+        <ul>
+           <a href="mengdejuese"><li>蒙德城</li></a>
+           <a href="liyuejuese"><li>璃月港</li></a>
+           <a href="daoqijuese"> <li>稻妻城</li></a>
+            <a href="xumijuese"><li>须弥城</li></a>
+            <li>敬请期待</li>
+        </ul>
+    </div>
+
+
+
+</body>
+</html>

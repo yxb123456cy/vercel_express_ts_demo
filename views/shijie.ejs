@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+/*         window.addEventListener('load',function(){
+            window.addEventListener('scroll',function(){
+                const ycimg=document.querySelector('.scroll');
+                let n=document.documentElement.scrollTop;
+                if(n>1500){
+                    ycimg.style.display='block';
+
+                }
+                else{
+                    ycimg.style.display='none';
+                }
+            })
+        }) */
+
+    </script>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+        }
+
+
+
+
+        .twt{
+            width: 100%;
+            height: 100vh;
+            background-image: url(/images/banner1.png);
+            background-position: center center;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            display: flex;justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            text-shadow: 0px 0px 5px #fff;
+            transition: all 0.5s;
+        }
+        .twt:hover .image{
+            opacity: 1;
+        }
+
+
+        .wb{
+            position: relative;
+            top: 100px;
+        }
+
+        .youji{
+            width:550%;
+            height: 40px;
+            background-image: url(/images/banner3.png);
+            background-size: cover;
+            text-align: center;
+            position: relative;
+
+            font-size: larger;
+            padding: 5px;
+            text-shadow: 0px 0px 5px #fff;
+
+        }
+        .img{
+            position: relative;
+          top: -50px
+        }
+        .mdc{
+            width: 100%;
+            height: 100vh;
+            background-image: url(/images/蒙德城.jpg);
+            background-position: center center;
+            background-size: cover;
+            color: #fff;
+            text-shadow: 0px 0px 5px #fff;
+            text-align: center;
+            transition: all 0.5s;
+
+
+
+        }
+        .mdc:hover:hover{
+            filter: brightness(1.2);
+        }
+
+        .mdc .box{
+            position: relative;
+            top: 180px;
+        }
+        .mdc .txhz{
+            display: flex;
+            flex-direction: row;
+           text-align: center;
+           font-size: larger;
+           justify-content: center;
+           position: relative;
+           left: -70px;
+           top: 20px;
+
+        }
+        .mdc .txhz .wz{
+            margin-left: 125px;
+            font-size: 50px;
+            position: relative;
+            top: -25px;
+        }
+        .lyg{
+            width: 100%;
+            height: 100vh;
+            background-image: url(/images/璃月港.jpg);
+            background-position: center center;
+            background-size: cover;
+            color: #fff;
+            text-shadow: 0px 0px 5px #fff;
+            text-align: center;
+            transition: all 0.5s;
+        }
+        .lyg:hover:hover{
+            filter: brightness(1.2);
+        }
+
+        .lyg .box{
+            position: relative;
+            top: 180px;
+        }
+        .lyg .txhz{
+            display: flex;
+            flex-direction: row;
+           text-align: center;
+           font-size: larger;
+           justify-content: center;
+           position: relative;
+           left: -70px;
+           top: 20px;
+
+        }
+        .lyg .txhz .wz{
+            margin-left: 125px;
+            font-size: 50px;
+            position: relative;
+            top: -25px;
+        }
+        .dqc{
+            width: 100%;
+            height: 100vh;
+            background-image: url(/images/稻妻城.jpg);
+            background-position: center center;
+            background-size: cover;
+            color: #fff;
+            text-shadow: 0px 0px 5px #fff;
+            text-align: center;
+            transition: all 0.5s;
+        }
+        .dqc:hover:hover{
+            filter: brightness(1.2);
+        }
+
+        .dqc .box{
+            position: relative;
+            top: 180px;
+        }
+        .dqc .txhz{
+            display: flex;
+            flex-direction: row;
+           text-align: center;
+           font-size: larger;
+           justify-content: center;
+           position: relative;
+           left: -70px;
+           top: 20px;
+
+        }
+        .dqc .txhz .wz{
+            margin-left: 125px;
+            font-size: 50px;
+            position: relative;
+            top: -25px;
+        }
+        .xmc{
+            width: 100%;
+            height: 100vh;
+            background-image: url(/images/须弥城.jpg);
+            background-position: center center;
+            background-size: cover;
+            color: #fff;
+            text-shadow: 0px 0px 5px #fff;
+            text-align: center;
+            transition: all 0.5s;
+        }
+
+        .xmc .box{
+            position: relative;
+            top: 180px;
+        }
+        .xmc .txhz{
+            display: flex;
+            flex-direction: row;
+           text-align: center;
+           font-size: larger;
+           justify-content: center;
+           position: relative;
+           left: -70px;
+           top: 20px;
+
+        }
+        .mdc:hover .image{
+            opacity: 1;
+        }
+        .lyg:hover .image{
+            opacity: 1;
+        }
+        .dqc:hover .image{
+            opacity: 1;
+        }
+        .xmc:hover .image{
+            opacity: 1;
+        }
+        .xmc .txhz .wz{
+            margin-left: 125px;
+            font-size: 50px;
+            position: relative;
+            top: -25px;
+        }
+        .xmc:hover:hover{
+            filter: brightness(1.2);
+        }
+        .tb{
+            width: 100%;
+            height: 50px;
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           border-bottom: 2px solid slategrey;
+            text-align: center;
+        }
+        .xm img{width: 40px;
+            margin-left: 100px;
+            opacity: 0.6;
+            position: relative;
+            left: -35px;
+            transition: all 0.5s;
+
+        }
+        .xm img:hover{
+            opacity: 1;
+            filter: brightness(1.5);
+        }
+        .footer{
+            width: 100%;
+            height: auto;
+            background-color: #000;
+            color: #999;
+            padding: 25px;
+
+        }
+        .footer .lb{
+            width: 60%;
+            height: auto;
+
+            text-align: center;
+            letter-spacing: 1px;
+            color:#fff;
+            position: relative;
+            left: 400px;
+
+        }
+        .footer .lb ul li{
+            display: inline;
+            margin-left: 10px;
+            transition: all 0.5s;
+        }
+        .footer .lb ul li:hover{
+            text-decoration: underline;
+
+            text-shadow: 0px 0px 5px #fff;
+        }
+        .footer .logo{
+            width: 40%;
+            position: relative;
+            right: 50px;
+           top: 50px;
+            text-align: center;
+
+        }
+        .footer .logo img{
+            width: 150px;
+            margin-left: 25px;
+        }
+        .footer_wb{
+            width: 68%;
+            font-size: 15px;
+            position: relative;
+            left: 480px;
+            top: -80px;
+        }
+        .footer_tb{
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            flex: 1;
+            align-items: center;
+            flex-direction: row;
+            position: relative;
+            left: 320px;
+            top: -40px;
+        }
+        .footer_tb .tpxm{
+            background-color: #000;
+            padding: 5px;
+            border-radius: 10px;
+            margin-left: 5px;
+        }
+        .top{
+            width: 100%;
+            height: 80px;
+            padding: 5px;
+            background-color: rgba(17,17,17,0.75);
+            box-shadow: 0px 3px 7px 0px rgb(0 0 0 / 35%);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            text-align: justify;
+            border-bottom: 2px solid #1a1a1a;
+            opacity: 0.8;
+            z-index: 999;
+        }
+        .left{
+            width: 70%;
+
+        }
+        .left ul{
+            position: relative;
+            left: -100px;
+            top: -20px;
+        }
+        .left ul li{
+            display: inline-block;
+            color: #fff;
+            margin-left: 25px;
+            font-size: larger;
+            transition: all ;
+
+
+        }
+         .left ul li:hover{
+            text-shadow: 0px 0px 5px skyblue;
+            border-top: 10px solid skyblue;
+
+        }
+
+
+        .right{
+            width: 30%;
+            float: right;
+            position: relative;
+            top: -51px;
+
+        }
+        .right ul li{
+            display: inline-block;
+            color: #fff;
+            margin-left: 25px;
+            font-size: larger;
+            transition: all .5s;
+
+        }
+        .right ul li:hover{
+            text-shadow: 0px 0px 5px skyblue;
+            border-top: 10px solid skyblue;
+
+        }
+        #tb{
+            position: relative;
+            left: 10px;
+            top: 20px;
+
+        }
+        .image{
+            width: 1000px;
+            position: relative;
+            top: -300px;
+            left: 500px;
+            opacity: 0;
+            transition: all 1.5s;
+        }
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="nav">
+           <div class="left">
+
+            <ul>
+                <li><img src="/images/logo2.png" alt="" width="300px" id="tb"></li>
+               <a href="index"> <li>首页</li></a>
+              <a href="xinwen">  <li>新闻</li></a>
+               <a href="mengdejuese"> <li>角色</li></a>
+              <a href="shijie">  <li>世界</li></a>
+              <a href="manhua">  <li>漫画</li></a>
+                <li>社区</li>
+            </ul>
+           </div>
+           <div class="right">
+            <ul>
+               <a href="guanai"> <li>成长关爱系统</li></a>
+                <li><img src="/images/爱心.png" alt=""></li>
+                <li>登录</li>
+                <li><img src="/images/登录.png" alt=""></li>
+            </ul>
+           </div>
+        </div>
+    </div>
+    <div id="fullpage">
+    <div class="twt" section>
+       <div class="wb">
+        <img src="/images/banner2.png"><br>
+        <img src="/images/banner4.png"><br>
+        <p>这里是七种元素交汇的幻想世界「提瓦特」。<br>
+            在遥远的过去，人们藉由对神灵的信仰，获赐了驱动元素的力量，得以在荒野中筑起家园。   <br>
+            五百年前，古国的覆灭却使得天地变异…        <br>
+            如今，席卷大陆的灾难已经停息，和平却仍未如期光临。</p>
+       </div>
+       <div class="youji">前往游记精选</div>
+       <div class="img"><img src="/images/原石.png"></div>
+
+    </div>
+    <div class="mdc">
+       <div class="box">
+        <img src="/images/蒙德.png" alt="" width="200px"><br>
+        <div class="txhz">
+            <div class=""><img src="/images/左箭头.png" alt=""></div>
+            <div class="wz">蒙德</div>
+            <div class=""><img src="/images/右箭头.png" alt=""></div>
+
+        </div>
+        <p>
+            位于提瓦特大陆东北部的自由城邦。<br>
+群山和广袤的平原间，自由之风携着蒲公英的气息吹拂过果酒湖，为坐落于湖心岛上的蒙德城送去<br>风神巴巴托斯的祝福与恩泽。
+        </p>
+       </div>
+       <div class="image"><img src="/images/温迪.png" alt="" width="1000px"></div>
+    </div>
+    <div class="lyg" section>
+        <div class="box">
+            <img src="/images/璃月.png" alt="" width="200px"><br>
+            <div class="txhz">
+                <div class=""><img src="/images/左箭头.png" alt=""></div>
+                <div class="wz">璃月</div>
+                <div class=""><img src="/images/右箭头.png" alt=""></div>
+
+            </div>
+            <p>
+                位于提瓦特大陆东方的富饶港湾。<br>
+                傲然矗立的山麓与石林、广袤的平原与生机勃勃的河滩共同构成了璃月的丰富地貌，在四季分明的<br>气候下焕发出多彩的风华。山石奇景间，又埋藏了多少岩之魔神的古老馈赠等待着人们发掘呢？
+            </p>
+           </div>
+           <div class="image"><img src="/images/钟离.png" alt="" width="1000px"></div>
+        </div>
+    </div>
+    <div class="dqc"  section>
+        <div class="box">
+            <img src="/images/稻妻.png" alt="" width="200px"><br>
+            <div class="txhz">
+                <div class=""><img src="/images/左箭头.png" alt=""></div>
+                <div class="wz">稻妻</div>
+                <div class=""><img src="/images/右箭头.png" alt=""></div>
+
+            </div>
+            <p>
+                位于提瓦特大陆远东的封闭群岛。<br>
+                越过无尽的雷暴，踏上红枫与绯樱眷顾的诸岛，在环绕的砂堤、高耸的断崖与幽秘的山林之中，见<br>证御建鸣神主尊大御所大人所追寻的永恒。
+            </p>
+           </div>
+           <div class="image"><img src="/images/影.png" alt="" width="1000px"></div>
+        </div>
+    </div>
+    <div class="xmc"  section>
+
+            <div class="box">
+                <img src="/images/须弥.png" alt="" width="200px"><br>
+                <div class="txhz">
+                    <div class=""><img src="/images/左箭头.png" alt=""></div>
+                    <div class="wz">须弥</div>
+                    <div class=""><img src="/images/右箭头.png" alt=""></div>
+
+                </div>
+                <p>
+                    位于提瓦特大陆中西部的学城之都。<br>
+                    同时拥有葱郁雨林与荒芜沙土的奇异国度，无数智慧的果实在这里生长、埋葬。无论是穿越丛林踏<br>上学城的台阶，还是深入沙漠挖掘赤土的遗迹，远道而来的旅者都可以在此获取宝贵的智识。
+                </p>
+               </div>
+               <div class="image"><img src="/images/纳西妲.png" alt="" width="1000px"></div>
+            </div>
+    </div>
+    <div class="tb">
+        <div class="xm"><img src="/images/微博.png" alt=""></div>
+        <div class="xm"><img src="/images/微信.png" alt=""></div>
+        <div class="xm"><img src="/images/QQ.png" alt=""></div>
+        <div class="xm"><img src="/images/分享.png" alt=""></div>
+
+
+    </div>
+    <div class="footer"  section>
+        <div class="lb">
+            <ul>
+                <li>用户协议|</li>
+                <li>隐私政策|</li>
+                <li>儿童隐私政策|</li>
+                <li>自律公约|</li>
+                <li>成长关爱|</li>
+                <li>关于我们|</li>
+                <li>联系我们|</li>
+                <li>加入我们</li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="/images/米哈游.png" alt="">
+            <img src="/images/logo.png" alt="">
+        </div>
+        <div class="footer_wb">
+            <p>
+                健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。<br>
+
+沪公网安备31010402001113号
+|
+增值电信业务经营许可证：沪B2-20190555<br>
+沪ICP备19018275号-4 | 沪网文〔2022〕1334-052号 | 国新出审【2019】2978号<br>
+互联网违法不良信息举报邮箱: tousu@mihoyo.com 互联网违法不良信息举报电话: 021-60371750 （工作时间：每天10点 - 20点）<br>
+亲爱的市民朋友，上海警方反诈劝阻电话“962110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听<br>
+未成年成长关爱热线：021-60371740 （服务时间：8:00-23:00）<br>
+© 2020 米哈游版权所有 | 上海米哈游影铁科技有限公司 客服电话：400-666-6312<br>
+            </p>
+        </div>
+        <div class="footer_tb">
+            <div class="tpxm"><img src="/images/1.png" alt=""></div>
+            <div class="tpxm"><img src="/images/2.png" alt=""></div>
+            <div class="tpxm"><img src="/images/3.png" alt=""></div>
+            <div class="tpxm"><img src="/images/4.png" alt=""></div>
+            <div class="tpxm"><img src="/images/5.png" alt=""></div>
+            <div class="tpxm"><img src="/images/6.png" alt=""></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

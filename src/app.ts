@@ -20,6 +20,47 @@ app.get("/", (req: Request, res: Response) => {
     // 設定 ejs 全域變數 locals.title 和 locals.message 的值
     res.render("index", {title: "Express", message: "Welcome to Express"});
 });
+app.get("/xinwen", (req: Request, res: Response) => {
+    // 設定 ejs 全域變數 locals.title 和 locals.message 的值
+    res.render("xinwen");
+});
+app.get("/daoqijuese", (req: Request, res: Response) => {
+    // 設定 ejs 全域變數 locals.title 和 locals.message 的值
+    res.render("daoqijuese");
+});
+app.get("/function", (req: Request, res: Response) => {
+    // 設定 ejs 全域變數 locals.title 和 locals.message 的值
+    res.render("function");
+});
+app.get("/guanai", (req: Request, res: Response) => {
+    // 設定 ejs 全域變數 locals.title 和 locals.message 的值
+    res.render("guanai");
+});
+app.get("/liyuejuese", (req: Request, res: Response) => {
+    // 設定 ejs 全域變數 locals.title 和 locals.message 的值
+    res.render("liyuejuese");
+});
+app.get("/manhua", (req: Request, res: Response) => {
+    // 設定 ejs 全域變數 locals.title 和 locals.message 的值
+    res.render("manhua");
+});
+app.get("/mengdejuese", (req: Request, res: Response) => {
+    // 設定 ejs 全域變數 locals.title 和 locals.message 的值
+    res.render("mengdejuese");
+});
+app.get("/protect", (req: Request, res: Response) => {
+    // 設定 ejs 全域變數 locals.title 和 locals.message 的值
+    res.render("protect");
+});
+app.get("/shijie", (req: Request, res: Response) => {
+    // 設定 ejs 全域變數 locals.title 和 locals.message 的值
+    res.render("shijie");
+});
+app.get("/xumijuese", (req: Request, res: Response) => {
+    // 設定 ejs 全域變數 locals.title 和 locals.message 的值
+    res.render("xumijuese");
+});
+
 
 // 路由设定 api 返回现在时间
 app.get("/api/now", (req: Request, res: Response) => {

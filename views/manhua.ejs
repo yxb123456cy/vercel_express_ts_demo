@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .footer{
+            width: 100%;
+            height: auto;
+            background-color: #000;
+            color: #999;
+            padding: 25px;
+
+        }
+        .footer .lb{
+            width: 60%;
+            height: auto;
+
+            text-align: center;
+            letter-spacing: 1px;
+            color:#fff;
+            position: relative;
+            left: 400px;
+
+        }
+        .footer .lb ul li{
+            display: inline;
+            margin-left: 10px;
+            transition: all 0.5s;
+        }
+        .footer .lb ul li:hover{
+            text-decoration: underline;
+
+            text-shadow: 0px 0px 5px #fff;
+        }
+        .footer .logo{
+            width: 40%;
+            position: relative;
+            right: 50px;
+           top: 50px;
+            text-align: center;
+
+        }
+        .footer .logo img{
+            width: 150px;
+            margin-left: 25px;
+        }
+        .footer_wb{
+            width: 68%;
+            font-size: 15px;
+            position: relative;
+            left: 480px;
+            top: -80px;
+        }
+        .footer_tb{
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            flex: 1;
+            align-items: center;
+            flex-direction: row;
+            position: relative;
+            left: 320px;
+            top: -40px;
+        }
+        .footer_tb .tpxm{
+            background-color: #000;
+            padding: 5px;
+            border-radius: 10px;
+            margin-left: 5px;
+        }
+        .top{
+            width: 100%;
+            height: 80px;
+            padding: 5px;
+            background-color: rgba(17,17,17,0.75);
+            box-shadow: 0px 3px 7px 0px rgb(0 0 0 / 35%);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            text-align: justify;
+            border-bottom: 2px solid #1a1a1a;
+            opacity: 0.8;
+            z-index: 2;
+        }
+        .left{
+            width: 70%;
+
+        }
+        .left ul{
+            position: relative;
+            left: -100px;
+            top: -20px;
+        }
+        .left ul li{
+            display: inline-block;
+            color: #fff;
+            margin-left: 25px;
+            font-size: larger;
+            transition: all ;
+
+
+        }
+         .left ul li:hover{
+            text-shadow: 0px 0px 5px skyblue;
+            border-top: 10px solid skyblue;
+
+        }
+
+
+        .right{
+            width: 30%;
+            float: right;
+            position: relative;
+            top: -51px;
+
+        }
+        .right ul li{
+            display: inline-block;
+            color: #fff;
+            margin-left: 25px;
+            font-size: larger;
+            transition: all .5s;
+
+        }
+        .right ul li:hover{
+            text-shadow: 0px 0px 5px skyblue;
+            border-top: 10px solid skyblue;
+
+        }
+        #tb{
+            position: relative;
+            left: 10px;
+            top: 20px;
+
+        }
+        .tb{
+            width: 100%;
+            height: 50px;
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           border-bottom: 2px solid slategrey;
+            text-align: center;
+        }
+        .xm img{width: 40px;
+            margin-left: 100px;
+            opacity: 0.6;
+            position: relative;
+            left: -35px;
+            transition: all 0.5s;
+
+        }
+        .xm img:hover{
+            opacity: 1;
+            filter: brightness(1.5);
+        }
+        .banner{
+            width: 100%;
+           height: 520px;
+            background-image: url(/images/温迪.jpg);
+            background-size: cover;
+            background-position: center center;
+
+        }
+        .banner_wz{
+            width: 60%;
+            color: #1a1a1a;
+            font-size: large;
+            font-weight: 900;
+            text-align: justify;
+            position: relative;
+            top: 140px;
+            left: 140px;
+
+
+        }
+        .banner .btn{
+            width: 60%;
+            display: flex;
+            position: relative;
+            top: 170px;
+            left: 90px;
+
+        }
+        .btn_1{width: 180px;
+            background-color: skyblue;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 25px;
+            padding: 5px;
+            text-align: center;
+            text-shadow: 0px 0px 5px #999;
+            margin-left: 45px;
+        }
+        .btn_2{width: 180px;
+            background-color: #1a1a1a;
+            color: #fff;
+            border-radius: 2px;
+            font-size: 25px;
+            padding: 5px;
+            text-align: center;
+            text-shadow: 0px 0px 5px #fff;
+            border-radius: 5px;
+            margin-left: 45px;
+
+        }
+        .mhhz{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background-image: url(/images/透明背景.jpg);
+            background-size: cover;
+            padding: 35px;
+        }
+        .mhhz .mh_xm{
+            margin-left: 25px;
+            margin-top: 25px;
+
+          background-color: #fff;
+           border-radius: 2px;
+          box-shadow: 0px 0px 1px #1a1a1a;
+          text-align: center;
+          position: relative;
+
+        }
+        .mhhz .mh_xm:nth-child(1):after{
+            width: 100%;
+            content: '第一话 添酒';
+            position: absolute;
+           top: 140px;
+           left: 0px;
+            font-size: 25px;
+            font-weight: 900;
+            height: 30px;
+           background-color: rgba(0, 0, 0,0.3);
+           color: #fff;
+
+        }
+        .mhhz .mh_xm:nth-child(2):after{
+            width: 100%;
+            content: '第二话 炎生';
+            position: absolute;
+           top: 140px;
+           left: 0px;
+            font-size: 25px;
+            font-weight: 900;
+            height: 30px;
+           background-color: rgba(0, 0, 0,0.3);
+           color: #fff;
+
+        }
+        .mhhz .mh_xm:nth-child(3):after{
+            width: 100%;
+            content: '第三话 失物';
+            position: absolute;
+           top: 140px;
+           left: 0px;
+            font-size: 25px;
+            font-weight: 900;
+            height: 30px;
+           background-color: rgba(0, 0, 0,0.3);
+           color: #fff;
+
+        }
+        .mhhz .mh_xm:nth-child(4):after{
+            width: 100%;
+            content: '第四话 变动';
+            position: absolute;
+           top: 140px;
+           left: 0px;
+            font-size: 25px;
+            font-weight: 900;
+            height: 30px;
+           background-color: rgba(0, 0, 0,0.3);
+           color: #fff;
+
+        }
+        .mhhz .mh_xm:nth-child(5):after{
+            width: 100%;
+            content: '第五话 险地';
+            position: absolute;
+           top: 140px;
+           left: 0px;
+            font-size: 25px;
+            font-weight: 900;
+            height: 30px;
+           background-color: rgba(0, 0, 0,0.3);
+           color: #fff;
+
+        }
+        .mhhz .mh_xm:nth-child(6):after{
+            width: 100%;
+            content: '第六话 风炎';
+            position: absolute;
+           top: 140px;
+           left: 0px;
+            font-size: 25px;
+            font-weight: 900;
+            height: 30px;
+           background-color: rgba(0, 0, 0,0.3);
+           color: #fff;
+
+        }
+        .mhhz .mh_xm:nth-child(7):after{
+            width: 100%;
+            content: '第七话 尘匣';
+            position: absolute;
+           top: 140px;
+           left: 0px;
+            font-size: 25px;
+            font-weight: 900;
+            height: 30px;
+           background-color: rgba(0, 0, 0,0.3);
+           color: #fff;
+
+        }
+        .mhhz .mh_xm:nth-child(8):after{
+            width: 100%;
+            content: '第八话 线索';
+            position: absolute;
+           top: 140px;
+           left: 0px;
+            font-size: 25px;
+            font-weight: 900;
+            height: 30px;
+           background-color: rgba(0, 0, 0,0.3);
+           color: #fff;
+
+        }
+        .mhhz .mh_xm:nth-child(9):after{
+            width: 100%;
+            content: '第九话 游宴';
+            position: absolute;
+           top: 140px;
+           left: 0px;
+            font-size: 25px;
+            font-weight: 900;
+            height: 30px;
+           background-color: rgba(0, 0, 0,0.3);
+           color: #fff;
+
+        }
+        .mhhz .mh_xm:nth-child(10):after{
+            width: 100%;
+            content: '第十话 愚戏';
+            position: absolute;
+           top: 140px;
+           left: 0px;
+            font-size: 25px;
+            font-weight: 900;
+            height: 30px;
+           background-color: rgba(0, 0, 0,0.3);
+           color: #fff;
+
+        }
+        .mhhz .mh_xm:nth-child(11):after{
+            width: 100%;
+            content: '第十一话 蛇音';
+            position: absolute;
+           top: 140px;
+           left: 0px;
+            font-size: 25px;
+            font-weight: 900;
+            height: 30px;
+           background-color: rgba(0, 0, 0,0.3);
+           color: #fff;
+
+        }
+        .mhhz .mh_xm:nth-child(12):after{
+            width: 100%;
+            content: '第十二话 心雾';
+            position: absolute;
+           top: 140px;
+           left: 0px;
+            font-size: 25px;
+            font-weight: 900;
+            height: 30px;
+           background-color: rgba(0, 0, 0,0.3);
+           color: #fff;
+
+        }
+        .mhhz .mh_xm:nth-child(13):after{
+            width: 100%;
+            content: '第十三话 再临';
+            position: absolute;
+           top: 140px;
+           left: 0px;
+            font-size: 25px;
+            font-weight: 900;
+            height: 30px;
+           background-color: rgba(0, 0, 0,0.3);
+           color: #fff;
+
+        }
+        .mhhz .mh_xm:nth-child(14):after{
+            width: 100%;
+            content: '第十四话 顽疾';
+            position: absolute;
+           top: 140px;
+           left: 0px;
+            font-size: 25px;
+            font-weight: 900;
+            height: 30px;
+           background-color: rgba(0, 0, 0,0.3);
+           color: #fff;
+
+        }
+        .mhhz .mh_xm:nth-child(15):after{
+            width: 100%;
+            content: '第十五话 落定';
+            position: absolute;
+           top: 140px;
+           left: 0px;
+            font-size: 25px;
+            font-weight: 900;
+            height: 30px;
+           background-color: rgba(0, 0, 0,0.3);
+           color: #fff;
+
+        }
+        .mhhz .mh_xm:nth-child(16):after{
+            width: 100%;
+            content: '第十六话 添酒';
+            position: absolute;
+           top: 140px;
+           left: 0px;
+            font-size: 25px;
+            font-weight: 900;
+            height: 30px;
+           background-color: rgba(0, 0, 0,0.3);
+           color: #fff;
+
+        }
+        .mhhz .mh_xm img{
+            filter: brightness(0.8);
+            transition: all 0.5s;
+            cursor: pointer;
+
+        }
+        .mhhz .mh_xm img:hover{
+            transform: scale(1.1);
+            filter:brightness(1.2);
+        }
+        .tb{
+            width: 100%;
+            height: 50px;
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           border-bottom: 2px solid slategrey;
+            text-align: center;
+        }
+        .xm img{width: 40px;
+            margin-left: 100px;
+            opacity: 0.6;
+            position: relative;
+            left: -35px;
+            transition: all 0.5s;
+
+        }
+        .xm img:hover{
+            opacity: 1;
+            filter: brightness(1.5);
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="nav">
+           <div class="left">
+
+            <ul>
+                <li><img src="/images/logo2.png" alt="" width="300px" id="tb"></li>
+               <a href="index"> <li>首页</li></a>
+              <a href="xinwen">  <li>新闻</li></a>
+               <a href="mengdejuese"> <li>角色</li></a>
+              <a href="shijie">  <li>世界</li></a>
+              <a href="manhua">  <li>漫画</li></a>
+                <li>社区</li>
+            </ul>
+           </div>
+           <div class="right">
+            <ul>
+               <a href="guanai"> <li>成长关爱系统</li></a>
+                <li><img src="/images/爱心.png" alt=""></li>
+                <li>登录</li>
+                <li><img src="/images/登录.png" alt=""></li>
+            </ul>
+           </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner_wz">
+            <p>
+                <h1>漫画</h1><br>
+这里是七种元素神灵信仰交汇的幻想世界提瓦特。<br>
+
+席卷大陆的灾难终于停息，疮痍逐渐被抚平——本应到来的安宁却并没有如期光临风<br>之城「蒙德」。<br>
+
+飞扬跋扈的组织「愚人众」借着保护的名义欺压诸国，而来自历史之暗的不祥也在等<br>待着复仇的机会……<br>
+            </p>
+        </div>
+        <div class="btn">
+            <div class="btn_1">继续阅读</div>
+            <div class="btn_2">重新开始</div>
+        </div>
+
+    </div>
+    <div class="mhhz">
+        <div class="mh_xm"><img src="/images/1.jpg" alt=""></div>
+        <div class="mh_xm"><img src="/images/2.jpg" alt=""></div>
+        <div class="mh_xm"><img src="/images/3.jpg" alt=""></div>
+        <div class="mh_xm"><img src="/images/4.jpg" alt=""></div>
+        <div class="mh_xm"><img src="/images/5.jpg" alt=""></div>
+        <div class="mh_xm"><img src="/images/6.jpg" alt=""></div>
+        <div class="mh_xm"><img src="/images/7.jpg" alt=""></div>
+        <div class="mh_xm"><img src="/images/8.jpg" alt=""></div>
+        <div class="mh_xm"><img src="/images/9.jpg" alt=""></div>
+        <div class="mh_xm"><img src="/images/10.jpg" alt=""></div>
+        <div class="mh_xm"><img src="/images/11.jpg" alt=""></div>
+        <div class="mh_xm"><img src="/images/12.jpg" alt=""></div>
+        <div class="mh_xm"><img src="/images/13.jpg" alt=""></div>
+        <div class="mh_xm"><img src="/images/14.jpg" alt=""></div>
+        <div class="mh_xm"><img src="/images/15.jpg" alt=""></div>
+        <div class="mh_xm"><img src="/images/16.jpg" alt=""></div>
+    </div>
+    <div class="tb">
+        <div class="xm"><img src="/images/微博.png" alt=""></div>
+        <div class="xm"><img src="/images/微信.png" alt=""></div>
+        <div class="xm"><img src="/images/QQ.png" alt=""></div>
+        <div class="xm"><img src="/images/分享.png" alt=""></div>
+    </div>
+    <div class="footer">
+        <div class="lb">
+            <ul>
+                <li>用户协议|</li>
+                <li>隐私政策|</li>
+                <li>儿童隐私政策|</li>
+                <li>自律公约|</li>
+                <li>成长关爱|</li>
+                <li>关于我们|</li>
+                <li>联系我们|</li>
+                <li>加入我们</li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="/images/米哈游.png" alt="">
+            <img src="/images/logo.png" alt="">
+        </div>
+        <div class="footer_wb">
+            <p>
+                健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。<br>
+
+沪公网安备31010402001113号
+|
+增值电信业务经营许可证：沪B2-20190555<br>
+沪ICP备19018275号-4 | 沪网文〔2022〕1334-052号 | 国新出审【2019】2978号<br>
+互联网违法不良信息举报邮箱: tousu@mihoyo.com 互联网违法不良信息举报电话: 021-60371750 （工作时间：每天10点 - 20点）<br>
+亲爱的市民朋友，上海警方反诈劝阻电话“962110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听<br>
+未成年成长关爱热线：021-60371740 （服务时间：8:00-23:00）<br>
+© 2020 米哈游版权所有 | 上海米哈游影铁科技有限公司 客服电话：400-666-6312<br>
+            </p>
+        </div>
+        <div class="footer_tb">
+            <div class="tpxm"><img src="/images/1.png" alt=""></div>
+            <div class="tpxm"><img src="/images/2.png" alt=""></div>
+            <div class="tpxm"><img src="/images/3.png" alt=""></div>
+            <div class="tpxm"><img src="/images/4.png" alt=""></div>
+            <div class="tpxm"><img src="/images/5.png" alt=""></div>
+            <div class="tpxm"><img src="/images/6.png" alt=""></div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

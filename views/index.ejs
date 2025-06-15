@@ -2,14 +2,576 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
-    <link rel="icon" type="image/x-icon" href="/images/logo.jpg">
-    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+        }
+        .top{
+            width: 100%;
+            height: 80px;
+            padding: 10px;
+            background-color: rgba(255,255,0,0.02);
+            box-shadow: 0px 3px 7px 0px rgb(0 0 0 / 35%);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            text-align: justify;
+            border-bottom: 2px solid #1a1a1a;
+            opacity: 0.8;
+            z-index: 999;
+        }
+        .left{
+            width: 70%;
+
+        }
+        .left ul{
+            position: relative;
+            left: -100px;
+            top: -20px;
+        }
+        .left ul li{
+            display: inline-block;
+            color: #fff;
+            margin-left: 25px;
+            font-size: larger;
+            transition: all ;
+
+
+        }
+
+
+
+
+
+        .right{
+            width: 30%;
+            float: right;
+            position: relative;
+            top: -51px;
+
+        }
+        .right ul li{
+            display: inline-block;
+            color: #fff;
+            margin-left: 25px;
+            font-size: larger;
+            transition: all .5s;
+
+        }
+
+        #tb{
+            position: relative;
+            left: 10px;
+            top: 20px;
+
+        }
+        .bz{
+            width: 100%;
+            height: 100vh;
+          margin: 0 auto;
+            background-image: url(/images/首页壁纸.jpg);
+            background-position: center center;
+            background-size: cover;
+            opacity: 0.95;
+        }
+        .news{
+            width: 100%;
+            height: 910px;
+            background-image: url(/images/news.jpg);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .news .xinwen{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: -45px;
+            top: -200px;
+        }
+        .news .xinwen h1{
+            color: #fff;
+            font-size: 60px;
+            position: relative;
+            left: 55px;
+        }
+        #qszh{width: 180px;
+            position: relative;
+            left: 1300px;
+            top: 100px;
+        }
+        #tishi{
+            width: 100px;
+            position: relative;
+            top: 400px;
+            left: 20px;
+        }
+        #bofang{
+            width: 300px;
+            position: relative;
+            top: 80px;
+            left: 600px;
+        }
+        #erweima{width: 120px;
+
+            position: relative;
+            top: 100px;
+            left: 450px;
+        }
+        #pcxz{width: 150px;
+
+            position: relative;
+            left: 900px;
+            top: -40px;
+        }
+        .txhz{
+            display: flex;
+            width: 400px;
+            position: relative;
+            top: -180px;
+            left: 540px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+        .bz img{cursor: pointer;
+
+            opacity: 0.9;
+            transition: all 0.5s;
+        }
+        .bz img:hover{
+            filter: brightness(1.4);
+            opacity: 1;
+        }
+        .main{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .main .main_box:nth-child(1){width: 100%;
+            height: 260px;
+
+            background-image: url(/images/首页蒙德城.jpg);
+            background-position: center center;
+            background-size: cover;
+
+        }
+        .main .main_box:nth-child(2){
+            width: 100%;
+            height: 260px;
+
+            background-image: url(/images/首页璃月港.jpg);
+            background-position: center center;
+            background-size: cover;
+
+        }
+        .main .main_box:nth-child(3){
+            width: 100%;
+            height: 260px;
+
+            background-image: url(/images/首页稻妻城.jpg);
+            background-position: center center;
+            background-size: cover;
+
+        }
+        .main .main_box:nth-child(4){
+            width: 100%;
+            height: 260px;
+
+            background-image: url(/images/首页须弥城.jpg);
+            background-position: center center;
+            background-size: cover;
+
+        }
+        .main .main_box{overflow: hidden;
+            border: 2px solid transparent;
+            transition: all 0.5s;
+            filter: brightness(0.6);
+
+        }
+        .main .main_box:hover{opacity: 1;
+            border: 2px solid #fff;
+            filter: brightness(1.1);
+
+
+        }
+        .main .main_box:hover img{
+            opacity: 1;
+        }
+        .main .main_box img{
+            top: -50px;
+            opacity: 0;
+            position: relative;
+            left: 600px;
+            transition: all 0.5s;
+        }
+        .main .main_box span{
+            display: block;
+            z-index: 2;
+            color: #fff;
+           font-weight: 900;
+           width: 150px;
+           font-size: 45px;
+           position: relative;
+           left: 45%;
+           top: 100px;
+
+        }
+        .jqqd{
+            width: 100%;
+            height: 260px;
+            background-image: url(/images/敬请期待.png);
+            background-position: center center;
+        }
+        .top{
+            width: 100%;
+            height: 80px;
+            padding: 5px;
+            background-color: rgba(17,17,17,0.75);
+            box-shadow: 0px 3px 7px 0px rgb(0 0 0 / 35%);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            text-align: justify;
+            border-bottom: 2px solid #1a1a1a;
+            opacity: 0.8;
+            z-index: 99;
+        }
+        .left{
+            width: 70%;
+
+        }
+        .left ul{
+            position: relative;
+            left: -100px;
+            top: -20px;
+        }
+        .left ul li{
+            display: inline-block;
+            color: #fff;
+            margin-left: 25px;
+            font-size: larger;
+            transition: all ;
+
+
+        }
+
+
+
+        .right{
+            width: 30%;
+            float: right;
+            position: relative;
+            top: -51px;
+
+        }
+        .right ul li{
+            display: inline-block;
+            color: #fff;
+            margin-left: 25px;
+            font-size: larger;
+            transition: all .5s;
+
+        }
+
+        #tb{
+            position: relative;
+            left: 10px;
+            top: 20px;
+
+        }
+        .footer{
+            width: 100%;
+            height: auto;
+            background-color: #000;
+            color: #999;
+            padding: 25px;
+
+
+        }
+        .footer .lb{
+            width: 60%;
+            height: auto;
+
+            text-align: center;
+            letter-spacing: 1px;
+            color:#fff;
+            position: relative;
+            left: 400px;
+
+        }
+        .footer .lb ul li{
+            display: inline;
+            margin-left: 10px;
+            transition: all 0.5s;
+        }
+        .footer .lb ul li:hover{
+            text-decoration: underline;
+
+            text-shadow: 0px 0px 5px #fff;
+        }
+        .footer .logo{
+            width: 40%;
+            position: relative;
+            right: 50px;
+           top: 50px;
+            text-align: center;
+
+        }
+        .footer .logo img{
+            width: 150px;
+            margin-left: 25px;
+        }
+        .footer_wb{
+            width: 68%;
+            font-size: 15px;
+            position: relative;
+            left: 480px;
+            top: -80px;
+        }
+        .footer_tb{
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            flex: 1;
+            align-items: center;
+            flex-direction: row;
+            position: relative;
+            left: 320px;
+            top: -40px;
+        }
+        .footer_tb .tpxm{
+            background-color: #000;
+            padding: 5px;
+            border-radius: 10px;
+            margin-left: 5px;
+        }
+        .tb{
+            width: 100%;
+            height: 50px;
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           border-bottom: 2px solid slategrey;
+            text-align: center;
+
+        }
+        .xm img{width: 40px;
+            margin-left: 100px;
+            opacity: 0.6;
+            position: relative;
+            left: -35px;
+            transition: all 0.5s;
+
+        }
+        .xm img:hover{
+            opacity: 1;
+            filter: brightness(1.5);
+        }
+        .left_tp{width: 700px;
+            height: 380px;
+          margin-top: -600px;
+          margin-left: 50px;
+          margin-bottom: 150px;
+
+
+
+        }
+        .xwlb{width: 700px;
+            height: 438px;
+            background-color: rgba(0, 0, 0, 0.2);
+           position: absolute;
+           top: 1040px;
+           left: 750px;
+
+
+        }
+        .lb_1 ul{
+            margin-top: 35px;
+        }
+        .lb_1 ul li{cursor: pointer;
+            display: inline;
+            color: #fff;
+            font-size: 25px;
+
+            margin-left: 35px;
+        }
+        .lb_2 ul li{display: block;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 2px #fff;
+            padding-top: 15px;
+            padding-right: 2px;
+            padding-bottom: 5px;
+            opacity: 0.9;
+            text-align: left;
+            width: 90%;
+            height: 15%;
+            font-size: 20px;
+            margin-top: 5px;
+           overflow: hidden;
+           transition: all 0.5s;
+        }
+        .lb_2 ul li:hover{
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        .lb_2 ul li span{
+            float: right;
+            color: #999;
+            font-size: smaller;
+        }
+        .zixun{
+            width: 120px;
+            position: relative;
+            left: 500px;
+            color: #fff;
+            font-size: larger;
+            top: 30px;
+            cursor: pointer;
+
+
+        }
+
+
+
+
+
+    </style>
 </head>
 <body>
-<h1><%= locals.title %></h1>
-<img src="/images/logo.jpg" alt="logo.jpg" width="250px">
-<p><%= locals.message %></p>
+    <div class="top">
+        <div class="nav">
+           <div class="left">
+
+            <ul>
+                <li><img src="/images/logo2.png" alt="" width="300px" id="tb"></li>
+               <a href="index"> <li>首页</li></a>
+              <a href="xinwen">  <li>新闻</li></a>
+               <a href="mengdejuese"> <li>角色</li></a>
+              <a href="shijie">  <li>世界</li></a>
+              <a href="manhua">  <li>漫画</li></a>
+                <li>社区</li>
+            </ul>
+           </div>
+           <div class="right">
+            <ul>
+               <a href="guanai"> <li>成长关爱系统</li></a>
+                <li><img src="/images/爱心.png" alt=""></li>
+                <li>登录</li>
+                <li><img src="/images/登录.png" alt=""></li>
+            </ul>
+           </div>
+        </div>
+    </div>
+    <div class="bz">
+        <div class="qszh"><img src="/images/七圣召唤.png" alt="" id="qszh"></div>
+        <div class="tishi"><img src="/images/提示.png" alt="" id="tishi"></div>
+        <div class="bofang"><img src="/images/播放.png" alt="" id="bofang"></div>
+        <div class="erweima"><img src="/images/二维码.png" alt="" id="erweima"></div>
+        <div class="pcxz"><img src="/images/pc下载.png" alt="" id="pcxz"></div>
+        <div class="txhz">
+            <div class="xm_1"><img src="/images/奇怪的图片.png" alt=""></div>
+            <div class="xm_1"><img src="/images/taptap下载.png" alt=""></div>
+            <div class="xm_1"><img src="/images/安卓下载.png" alt=""></div>
+            <div class="xm_1"><img src="/images/苹果下载.png" alt=""></div>
+        </div>
+
+    </div>
+    <div class="news">
+        <div class="xinwen">
+            <div class="jt"><img src="/images/左箭头.png" alt=""></div>
+            <div class="wz"><h1>新闻资讯</h1></div>
+            <div class="jt"><img src="/images/右箭头.png" alt="" id="youjiantou"></div>
+        </div>
+
+
+    </div>
+    <div class="left_tp"><img src="/images/首页新闻图片.jpg" alt=""width='700px'></div>
+    <div class="xwlb">
+        <div class="lb_1">
+            <ul>
+                <li>最新</li>
+                <li>新闻</li>
+                <li>公告</li>
+                <li>活动</li>
+            </ul>
+            <div class="lb_2">
+                <ul>
+                    <li>《原神》「风花的呼吸」玩法说明<span>2023/03/01</span></li>
+                    <li>《原神》「风花的呼吸」活动即将开启<span>2023/03/01</span></li>
+                    <li>《原神》拾枝杂谈-「迪希雅：热沙的赤情」<span>2023/03/01</span></li>
+                    <li>《原神》3.5版本内容招募活动「风花的呼吸」现已开启<span>2023/03/01</span></li>
+                    <li>《原神》「神铸赋形」活动祈愿现已开启，「双手.....<span>2023/03/01</span></li>
+                </ul>
+            </div>
+            <div class="zixun">查看全部资讯</div>
+        </div>
+
+    </div>
+    <div class="main">
+        <div class="main_box"><span>蒙德城</span><img src="/images/首页琴.png" alt=""></div>
+        <div class="main_box"><span>璃月港</span><img src="/images/首页魈.png" alt=""></div>
+        <div class="main_box"><span>稻妻城</span><img src="/images/首页凌华.png" alt=""></div>
+        <div class="main_box"><span>须弥城</span><img src="/images/首页提纳里.png" alt=""></div>
+    </div>
+    <div class="jqqd"></div>
+    <div class="tb">
+        <div class="xm"><img src="/images/微博.png" alt=""></div>
+        <div class="xm"><img src="/images/微信.png" alt=""></div>
+        <div class="xm"><img src="/images/QQ.png" alt=""></div>
+        <div class="xm"><img src="/images/分享.png" alt=""></div>
+    </div>
+    <div class="footer">
+        <div class="lb">
+            <ul>
+                <li>用户协议|</li>
+                <li>隐私政策|</li>
+                <li>儿童隐私政策|</li>
+                <li>自律公约|</li>
+                <li>成长关爱|</li>
+                <li>关于我们|</li>
+                <li>联系我们|</li>
+                <li>加入我们</li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="/images/米哈游.png" alt="">
+            <img src="/images/logo.png" alt="">
+        </div>
+        <div class="footer_wb">
+            <p>
+                健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。<br>
+
+沪公网安备31010402001113号
+|
+增值电信业务经营许可证：沪B2-20190555<br>
+沪ICP备19018275号-4 | 沪网文〔2022〕1334-052号 | 国新出审【2019】2978号<br>
+互联网违法不良信息举报邮箱: tousu@mihoyo.com 互联网违法不良信息举报电话: 021-60371750 （工作时间：每天10点 - 20点）<br>
+亲爱的市民朋友，上海警方反诈劝阻电话“962110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听<br>
+未成年成长关爱热线：021-60371740 （服务时间：8:00-23:00）<br>
+© 2020 米哈游版权所有 | 上海米哈游影铁科技有限公司 客服电话：400-666-6312<br>
+            </p>
+        </div>
+        <div class="footer_tb">
+            <div class="tpxm"><img src="/images/1.png" alt="" ></div>
+            <div class="tpxm"><img src="/images/2.png" alt=""></div>
+            <div class="tpxm"><img src="/images/3.png" alt=""></div>
+            <div class="tpxm"><img src="/images/4.png" alt=""></div>
+            <div class="tpxm"><img src="/images/5.png" alt=""></div>
+            <div class="tpxm"><img src="/images/6.png" alt=""></div>
+        </div>
+    </div>
+
 </body>
 </html>

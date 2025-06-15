@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.addEventListener('load',function(){
+            const name=document.querySelector('.name');
+            const cv=document.querySelector('.cv');
+            const jsjs=document.querySelector('.jsjs');
+            const jstp=document.querySelector('#jstp');
+            const qin=document.getElementById('qin');
+            const keli=document.getElementById('keli');
+            const wendi=document.getElementById('wendi');
+            const dlk=document.getElementById('dlk');
+            const mona=document.getElementById('mona');
+            const abd=document.getElementById('abd');
+            qin.addEventListener('click',function(){
+                jstp.src="/images/琴.png"
+                name.innerHTML='琴';
+                cv.innerHTML='cv:林籁';
+                jsjs.innerHTML='身为西风骑士团的代理团长，琴一直忠于职守，为人们带来安宁。虽然琴并非天赋异禀，但通过刻苦训练，如今的她已然能够独当一面。当风魔龙的威胁开始临近，这位可靠的代理团长早已做好了准备，誓要守护蒙德。'
+
+
+            })
+            keli.addEventListener('click',function(){
+                jstp.src="/images/可莉.png"
+                name.innerHTML='可莉';
+                cv.innerHTML='cv:花玲'
+                jsjs.innerHTML='西风骑士团火花骑士，永远伴随闪光与爆炸出现！然后在琴团长严厉的目光注视下默默消失   。西风骑士团禁闭室的常客，蒙德的爆破大师，人称“逃跑的太阳”。'
+            })
+            wendi.addEventListener('click',function(){
+                jstp.src="/images/温迪.png"
+                name.innerHTML='温迪';
+                cv.innerHTML='cv:喵*酱';
+                jsjs.innerHTML='来路不明的吟游诗人，有时唱一些老掉牙的旧诗，有时会唱出谁也没听过的新歌。喜欢苹果和热闹的气氛，讨厌奶酪和一切黏糊糊的物质。在引导【风】的元素力时，元素的塑性往往外显为羽毛，因为他很中意看上去轻飘飘的东西。'
+            })
+            dlk.addEventListener('click',function(){
+                jstp.src="/images/迪卢克.png"
+                name.innerHTML='迪卢克';
+                cv.innerHTML='cv:马洋';
+                jsjs.innerHTML='身为蒙德城第一富豪，风度翩翩的迪卢克总是以完美的贵公子形象示人。然而他真是的一面，是秉承坚定信念的战士，他那【不惜一切守护蒙德】的意志犹如火焰般炽热，令他能以恐怖的攻势，毫不留情地将一切敌人击溃。'
+            })
+            mona.addEventListener('click',function(){
+                jstp.src="/images/莫娜.png"
+                name.innerHTML='莫娜';
+                cv.innerHTML='cv:陈婷婷';
+                jsjs.innerHTML='神秘的少女占星术士，声称自己是“伟大的占星术士莫娜”。拥有与名号相符的不俗实力，博学而高傲。尽管过着拮据、清贫的生活，但她坚决不用占卜来牟利，正是这种坚持，导致莫娜总是在为生计发愁。'
+            })
+            abd.addEventListener('click',function(){
+                jstp.src="/images/阿贝多.png"
+                name.innerHTML='阿贝多';
+                cv.innerHTML='cv:Mace';
+                jsjs.innerHTML='蒙德西风骑士团首席炼金术士兼调查小队队长，被称做“白垩之子”的天才   ，他不怎么在意称号和名望，只专注于研究课题。财富和人脉不是他的目标。他渴望驾驭的，是从古到今深藏于人类头脑中的无上知识'
+
+            })
+
+
+        })
+    </script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .top{
+            width: 100%;
+            height: 80px;
+            padding: 5px;
+            background-color: rgba(17,17,17,0.75);
+            box-shadow: 0px 3px 7px 0px rgb(0 0 0 / 35%);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            text-align: justify;
+            border-bottom: 2px solid #1a1a1a;
+            opacity: 0.8;
+            z-index: 99;
+        }
+        .left{
+            width: 70%;
+
+        }
+        .left ul{
+            position: relative;
+            left: -100px;
+            top: -20px;
+        }
+        .left ul li{
+            display: inline-block;
+            color: #fff;
+            margin-left: 25px;
+            font-size: larger;
+            transition: all ;
+
+
+        }
+         .left ul li:hover{
+            text-shadow: 0px 0px 5px skyblue;
+            border-top: 10px solid skyblue;
+
+        }
+
+
+        .right{
+            width: 30%;
+            float: right;
+            position: relative;
+            top: -51px;
+
+        }
+        .right ul li{
+            display: inline-block;
+            color: #fff;
+            margin-left: 25px;
+            font-size: larger;
+            transition: all .5s;
+
+        }
+        .right ul li:hover{
+            text-shadow: 0px 0px 5px skyblue;
+            border-top: 10px solid skyblue;
+
+        }
+        #tb{
+            position: relative;
+            left: 10px;
+            top: 20px;
+
+        }
+        .main{
+            width: 100%;
+            height: 110vh;
+            background-image: url(/images/角色蒙德城.jpg);
+            background-position: center center;
+            background-size: cover;
+
+
+
+
+        }
+        .jstp img{
+            width: 1250px;
+        }
+        .fk{
+            display: block;
+          width: 180px;
+          height: 6px;
+         background: #e3bc8c;
+         position: relative;
+         left: 250px;
+         top: 120px;
+        }
+        .name{
+            width: 200px;
+            height: 100px;
+            color: #fff;
+            font-size: 55px;
+            font-weight: 900;
+            position: relative;
+            left: 250px;
+            top: 140px;
+        }
+        .cv{
+
+    display: flex;
+    width: 330px;
+    font-weight: 500;
+    font-size: 28px;
+    height: 54px;
+
+    color: #24333c;
+    line-height: 54px;
+    padding-left: 60px;
+    box-sizing: border-box;
+    background: #cca574 ;
+    background-position: left top;
+    background-size: 54px;
+    text-align: left;
+    box-shadow: 2px 3px 6px 0 rgb(12 12 12 / 20%);
+    position: relative;
+    left: 300px;
+    top: 160px;
+        }
+        #dht{position: relative;
+            width:70px;
+            left: 310px;
+            top: 20px;z-index: 11;
+
+        }
+        #xtb{width: 80px;
+            position: relative;
+            left: 250px;
+            top: 106px;
+
+        }
+        .jsjs{
+            width: 550px;
+            color: #fff;
+            font-weight: 500;
+            background-color: #24333c;
+            opacity: 0.9;
+           padding-left: 50px;
+           padding-bottom: 25px;
+           padding-top: 20px;
+           padding-right: 25px;
+            text-align: justify;
+            line-height: 25px;
+            position: relative;
+            left: 250px;
+            top: -45px;
+            z-index: 2;
+        }
+        #bsxtb{
+            width: 20px;
+            position: relative;
+            left: 240px;
+            top: 30px;
+
+
+        }
+        .jstp{
+            width: 1200px;
+            height: 400px;
+            position: relative;
+            left: 240px;
+            top: -520px;
+        }
+        .jsxzl{
+            width:100%;
+            display: flex;
+
+            justify-content: center;
+            position: relative;
+            top: -380px;
+            z-index: 9;
+            padding: 25px;
+            background-color: rgba(0, 0, 0, 0.2);
+            opacity: 0.9;
+        }
+        .jsxzl .jsxm img{
+            width: 130px;
+        }
+        .jsxzl .jsxm{
+            width: 200px;
+            height: auto;
+            padding: 5px;
+            margin-left: 45px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+            color: #fff;
+            text-align: center;
+            font-size: larger;
+           clear: both;
+           border: 5px solid transparent;
+           cursor: pointer;
+
+        }
+
+        .jsxzl .jsxm:hover{
+          border: 5px solid #fff;
+        }
+        .zuotubiao img {
+            margin-right: 105px;
+            margin-top: 65px;
+            transition: all 0.5s;
+            opacity: 0.5;
+        }
+        .zuotubiao img:hover{
+            opacity: 1;
+        }
+        .youtubiao img{
+            margin-left: 105px;
+            margin-top: 65px;
+            transition: all 0.5s;
+            opacity: 0.5;
+        }
+        .youtubiao img:hover{
+            opacity: 1;
+        }
+        .footer{
+            width: 100%;
+            height: auto;
+            background-color: #000;
+            color: #999;
+            padding: 25px;
+
+
+        }
+        .footer .lb{
+            width: 60%;
+            height: auto;
+
+            text-align: center;
+            letter-spacing: 1px;
+            color:#fff;
+            position: relative;
+            left: 400px;
+
+        }
+        .footer .lb ul li{
+            display: inline;
+            margin-left: 10px;
+            transition: all 0.5s;
+        }
+        .footer .lb ul li:hover{
+            text-decoration: underline;
+
+            text-shadow: 0px 0px 5px #fff;
+        }
+        .footer .logo{
+            width: 40%;
+            position: relative;
+            right: 50px;
+           top: 50px;
+            text-align: center;
+
+        }
+        .footer .logo img{
+            width: 150px;
+            margin-left: 25px;
+        }
+        .footer_wb{
+            width: 68%;
+            font-size: 15px;
+            position: relative;
+            left: 480px;
+            top: -80px;
+        }
+        .footer_tb{
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            flex: 1;
+            align-items: center;
+            flex-direction: row;
+            position: relative;
+            left: 320px;
+            top: -40px;
+        }
+        .footer_tb .tpxm{
+            background-color: #000;
+            padding: 5px;
+            border-radius: 10px;
+            margin-left: 5px;
+        }
+        .tb{
+            width: 100%;
+            height: 50px;
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           border-bottom: 2px solid slategrey;
+            text-align: center;
+
+        }
+        .xm img{width: 40px;
+            margin-left: 100px;
+            opacity: 0.6;
+            position: relative;
+            left: -35px;
+            transition: all 0.5s;
+
+        }
+        .xm img:hover{
+            opacity: 1;
+            filter: brightness(1.5);
+        }
+        .xzl{width: 250px;
+            color: #fff;
+            font-size: 20px;
+            position: absolute;
+            top: 80px;
+            left: 45px;
+            letter-spacing: 2px;
+        }
+        .xzl ul li{
+            margin-top:55px;
+            transition: all 0.5s;
+        }
+        .xzl ul li:hover{
+            transform: scale(1.1);
+            text-decoration: underline;
+        }
+        a{
+            color: #fff;
+            text-decoration: none;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="nav">
+           <div class="left">
+
+            <ul>
+                <li><img src="/images/logo2.png" alt="" width="300px" id="tb"></li>
+               <a href="index"> <li>首页</li></a>
+              <a href="xinwen">  <li>新闻</li></a>
+               <a href="mengdejuese"> <li>角色</li></a>
+              <a href="shijie">  <li>世界</li></a>
+              <a href="manhua">  <li>漫画</li></a>
+                <li>社区</li>
+            </ul>
+           </div>
+           <div class="right">
+            <ul>
+               <a href="guanai"> <li>成长关爱系统</li></a>
+                <li><img src="/images/爱心.png" alt=""></li>
+                <li>登录</li>
+                <li><img src="/images/登录.png" alt=""></li>
+            </ul>
+           </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="fk"></div>
+        <div class="name">琴</div>
+        <div class="cv">cv:林籁</div>
+       <div id="xtb"><img src="/images/小图标.jpeg" alt="" ></div>
+       <div id="dht"><img src="/images/电话筒.png" alt="" id="dht"></div>
+       <div id="bsxtb"><img src="/images/白色小图标.png" alt="" width=80px"></div>
+        <div class="jsjs">身为西风骑士团的代理团长，琴一直忠于职守，为人们带来安<br>
+        宁。虽然并非天赋异凛，但通过刻苦训练，如今的她已然能够独<br>当一面。<br>
+    当风魔龙的威胁开始临近，这位可靠的代理团长早已做好了准<br>备，誓要守护蒙德。</div>
+    <div class="jstp"><img src="/images/琴.png" alt="" id="jstp"></div>
+    <div class="jsxzl">
+        <div class="zuotubiao"><img src="/images/左图标.png" alt=""></div>
+        <div class="jsxm" id="qin"><img src="/images/小琴.png" alt=""><br>琴</div>
+        <div class="jsxm" id="keli"><img src="/images/小可莉.png" alt=""><br>可莉</div>
+        <div class="jsxm" id="wendi"><img src="/images/小温迪.png" alt=""><br>温迪</div>
+        <div class="jsxm" id="dlk"><img src="/images/小迪卢克.png" alt=""><br>迪卢克</div>
+        <div class="jsxm" id="mona"><img src="/images/小莫娜.png" alt=""><br>莫娜</div>
+        <div class="jsxm" id="abd"><img src="/images/小阿贝多.png" alt=""><br>阿贝多</div>
+        <div class="youtubiao"><img src="/images/右图标.png" alt=""></div>
+    </div>
+    </div>
+    <div class="tb">
+        <div class="xm"><img src="/images/微博.png" alt=""></div>
+        <div class="xm"><img src="/images/微信.png" alt=""></div>
+        <div class="xm"><img src="/images/QQ.png" alt=""></div>
+        <div class="xm"><img src="/images/分享.png" alt=""></div>
+    </div>
+    <div class="footer">
+        <div class="lb">
+            <ul>
+                <li>用户协议|</li>
+                <li>隐私政策|</li>
+                <li>儿童隐私政策|</li>
+                <li>自律公约|</li>
+                <li>成长关爱|</li>
+                <li>关于我们|</li>
+                <li>联系我们|</li>
+                <li>加入我们</li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="/images/米哈游.png" alt="">
+            <img src="/images/logo.png" alt="">
+        </div>
+        <div class="footer_wb">
+            <p>
+                健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。<br>
+
+沪公网安备31010402001113号
+|
+增值电信业务经营许可证：沪B2-20190555<br>
+沪ICP备19018275号-4 | 沪网文〔2022〕1334-052号 | 国新出审【2019】2978号<br>
+互联网违法不良信息举报邮箱: tousu@mihoyo.com 互联网违法不良信息举报电话: 021-60371750 （工作时间：每天10点 - 20点）<br>
+亲爱的市民朋友，上海警方反诈劝阻电话“962110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听<br>
+未成年成长关爱热线：021-60371740 （服务时间：8:00-23:00）<br>
+© 2020 米哈游版权所有 | 上海米哈游影铁科技有限公司 客服电话：400-666-6312<br>
+            </p>
+        </div>
+        <div class="footer_tb">
+            <div class="tpxm"><img src="/images/1.png" alt="" ></div>
+            <div class="tpxm"><img src="/images/2.png" alt=""></div>
+            <div class="tpxm"><img src="/images/3.png" alt=""></div>
+            <div class="tpxm"><img src="/images/4.png" alt=""></div>
+            <div class="tpxm"><img src="/images/5.png" alt=""></div>
+            <div class="tpxm"><img src="/images/6.png" alt=""></div>
+        </div>
+    </div>
+    <div class="xzl">
+        <ul>
+           <a href="mengdejuese"><li>蒙德城</li></a>
+           <a href="liyuejuese"><li>璃月港</li></a>
+           <a href="daoqijuese"> <li>稻妻城</li></a>
+            <a href="xumijuese"><li>须弥城</li></a>
+            <li>敬请期待</li>
+        </ul>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+.section{
+    width:100% ;
+    height: auto;
+    padding-top: 35px;
+    padding-bottom: 100px;
+
+}
+.section .btns{
+    width: 60%;
+    position: relative;
+    left: 50px;
+
+}
+.section .btns .btn{
+    width: 150px;
+    display: inline-block;
+    background-color: silver;
+    font-size: larger;
+    padding: 10px;
+    text-align: center;
+    margin-left: 45px;
+    border-radius: 5px;
+    transition: all 0.5s;
+
+}
+.section .btns .btn:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: antiquewhite;
+    font-family: 900;
+
+}
+.section .btns .btn:nth-child(1){
+   background-color: rgba(0, 0, 0, 0.8);
+    color: antiquewhite;
+    font-family: 900;
+
+}
+.lb{width: 80%;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    margin-top: 50px;
+    margin-left: 90px;
+    background-color: #fff;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+    clear: both;
+    
+}
+.lb:hover{ border: 3px solid rgba(0, 0, 0, 0.5);
+
+}
+.lb #wz1{
+    width: 200px;
+    position: relative;
+    top: -100px;
+    left: 40px;
+    font-size: larger;
+    font-weight: 900;
+    
+
+}
+.fk{
+    width: 80%;
+    color: #fff;
+    background-color: silver;
+    margin-left: 90px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 45px;
+    transition: all 0.5s;
+}
+.fk:hover{
+    background-color: slategrey;
+}
+
+
+.lb img{
+    width: 300px;
+}  .footer{
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    color: #999;
+    padding: 25px;
+    
+   
+}
+.footer #lb{
+    width: 60%;
+    height: auto;
+    
+    text-align: center;
+    letter-spacing: 1px;
+    color:#fff;
+    position: relative;
+    left: 400px;
+
+}
+.footer #lb ul li{
+    display: inline;
+    margin-left: 10px;
+    transition: all 0.5s;
+}
+.footer #lb ul li:hover{
+    text-decoration: underline;
+   
+    text-shadow: 0px 0px 5px #fff;
+}
+.footer .logo{
+    width: 40%;
+    position: relative;
+    right: 50px;
+   top: 50px;
+    text-align: center;
+    
+}
+.footer .logo img{
+    width: 150px;
+    margin-left: 25px;
+}
+.footer_wb{
+    width: 68%;
+    font-size: 15px;
+    position: relative;
+    left: 480px;
+    top: -80px;
+}
+.footer_tb{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    left: 320px;
+    top: -40px;
+}
+.footer_tb .tpxm{
+    background-color: #000;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+.tb{
+    width: 100%;
+    height: 50px;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   border-bottom: 2px solid slategrey;
+    text-align: center;
+   
+}
+.xm img{width: 40px;
+    margin-left: 100px;
+    opacity: 0.6;
+    position: relative;
+    left: -35px;
+    transition: all 0.5s;
+
+}
+.xm img:hover{
+    opacity: 1;
+    filter: brightness(1.5);
+}
